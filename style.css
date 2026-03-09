@@ -926,7 +926,7 @@ h1 {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.2s ease;
-    z-index: 60;
+    z-index: 45;
   }
 
   .menu-overlay.show {
