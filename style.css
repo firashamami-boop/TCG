@@ -234,6 +234,7 @@ section {
 .about,
 .faq,
 .contact,
+.local-seo,
 .cta-band {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -529,6 +530,20 @@ h1 {
   color: var(--muted);
 }
 
+.service-link {
+  display: inline-block;
+  margin-top: 0.55rem;
+  color: #a9ebff;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px dashed rgba(169, 235, 255, 0.4);
+}
+
+.service-link:hover {
+  color: #d5fff3;
+  border-bottom-color: rgba(213, 255, 243, 0.75);
+}
+
 .portfolio-tag {
   display: inline-flex;
   margin: 0 0 0.3rem;
@@ -721,6 +736,128 @@ h1 {
   color: var(--muted);
 }
 
+.hero-modern {
+  grid-template-columns: 1fr;
+  border-radius: var(--radius);
+  overflow: clip;
+  min-height: 460px;
+  background:
+    linear-gradient(115deg, rgba(7, 13, 24, 0.9) 24%, rgba(7, 13, 24, 0.46) 64%, rgba(7, 13, 24, 0.94) 100%),
+    url("assets/hero-ai-tech.svg");
+  background-size: 136% auto;
+  background-position: 50% center;
+  border: 1px solid rgba(123, 155, 214, 0.24);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+
+.hero-modern .hero-text {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 2.4rem 1.9rem 2.1rem;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-modern .hero-text::before {
+  display: none;
+}
+
+.hero-trust,
+.hero-locations {
+  margin: 0;
+  color: #d6e2fb;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.hero-locations {
+  color: #9cc8e5;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.hero-meta {
+  margin-top: 0.9rem;
+  padding-top: 0.76rem;
+  border-top: 1px solid rgba(136, 173, 231, 0.3);
+  display: grid;
+  gap: 0.24rem;
+}
+
+.section-hub {
+  padding: 0.5rem 0 1.1rem;
+}
+
+.hub-list {
+  display: grid;
+  gap: 0.62rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.hub-item {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid rgba(123, 155, 214, 0.28);
+  border-radius: 12px;
+  background: linear-gradient(170deg, rgba(9, 17, 31, 0.88), rgba(8, 14, 25, 0.92));
+  padding: 0.84rem 0.86rem 0.74rem;
+  display: grid;
+  gap: 0.18rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.hub-item strong {
+  font-size: 1.05rem;
+}
+
+.hub-item span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.hub-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(141, 188, 255, 0.5);
+  background: linear-gradient(170deg, rgba(13, 24, 44, 0.9), rgba(9, 17, 30, 0.94));
+}
+
+.hub-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  border: 1px solid rgba(123, 155, 214, 0.35);
+  background: rgba(65, 201, 255, 0.12);
+}
+
+.hub-link {
+  color: #a9ebff;
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+.page-shell {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, rgba(18, 31, 55, 0.9), rgba(13, 24, 43, 0.9));
+  padding: 1.2rem;
+  margin-top: 1.1rem;
+}
+
+.page-list {
+  margin: 0.6rem 0 1rem;
+  padding: 0 1rem 0 0;
+  color: var(--muted);
+  display: grid;
+  gap: 0.45rem;
+}
+
 .site-footer {
   color: var(--muted);
   text-align: center;
@@ -788,6 +925,238 @@ h1 {
   }
 }
 
+/* Homepage visual match layout */
+.home-match .bg-shape {
+  display: none;
+}
+
+.home-match .nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.home-match .menu {
+  justify-self: center;
+  gap: 0.02rem;
+}
+
+.home-match .menu a {
+  padding: 0.34rem 0.64rem;
+  font-size: 0.98rem;
+}
+
+.home-match .hero.hero-modern {
+  margin-top: 0;
+  min-height: calc(100svh - 76px);
+  padding: 2.1rem 1.2rem 1rem;
+  background-size: 126% auto;
+  background-position: center 42%;
+  width: 100%;
+  max-width: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-match .hero-modern .hero-text {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.2rem 0 0.8rem;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.home-match .hero-modern h1 {
+  font-size: clamp(2.45rem, 3.8vw, 4.05rem);
+  margin: 0.8rem 0 0.55rem;
+  letter-spacing: -0.015em;
+}
+
+.home-match .hero-copy {
+  max-width: 62ch;
+  margin: 0 auto;
+}
+
+.home-match .hero-actions {
+  justify-content: center;
+}
+
+.home-match .hero-meta {
+  max-width: 700px;
+  margin: 0.95rem auto 0;
+  gap: 0.28rem;
+}
+
+.home-match .section-hub {
+  margin-top: auto;
+  padding: 0 0 1rem;
+  width: min(var(--max), calc(100% - 2rem));
+  align-self: center;
+}
+
+.home-match .section-hub .section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.72rem;
+}
+
+.home-match .section-hub .section-title::after {
+  right: 50%;
+  transform: translateX(50%);
+  width: 120px;
+}
+
+.home-match .hub-list {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.home-match .hub-item {
+  min-height: 160px;
+  align-content: start;
+}
+
+@media (max-width: 980px) {
+  .home-match .nav {
+    display: flex;
+  }
+
+  .home-match .hero.hero-modern {
+    min-height: auto;
+    padding: 1.25rem 0.75rem 0.9rem;
+    background-size: 178% auto;
+    background-position: 62% 30%;
+    border-radius: 0;
+  }
+
+  .home-match .hero-modern .hero-text {
+    text-align: right;
+    margin: 0;
+    padding: 1rem 0.4rem 0.8rem;
+  }
+
+  .home-match .hero-modern h1 {
+    font-size: clamp(1.95rem, 8vw, 2.45rem);
+  }
+
+  .home-match .hero-copy {
+    margin: 0;
+  }
+
+  .home-match .hero-actions {
+    justify-content: flex-start;
+  }
+
+  .home-match .hero-meta {
+    margin: 0.82rem 0 0;
+  }
+
+  .home-match .section-hub {
+    margin-top: 1rem;
+  }
+
+  .home-match .hub-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Unified section pages (same design language as homepage hero) */
+.section-match .bg-shape {
+  display: none;
+}
+
+.section-match .section-stage {
+  min-height: calc(100svh - 76px);
+  width: 100%;
+  max-width: none;
+  margin-top: 0;
+  padding: 2.1rem 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    linear-gradient(115deg, rgba(7, 13, 24, 0.9) 24%, rgba(7, 13, 24, 0.46) 64%, rgba(7, 13, 24, 0.94) 100%),
+    url("assets/hero-ai-tech.svg");
+  background-size: 126% auto;
+  background-position: center 42%;
+}
+
+.section-match .section-stage-top {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-match .section-stage-top h1 {
+  margin: 0.8rem 0 0.55rem;
+  font-size: clamp(2.3rem, 3.7vw, 3.95rem);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.section-match .section-stage-top p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.section-match .section-stage-grid {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 1rem auto 0;
+}
+
+.section-match .page-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-match .hub-list {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.section-match .hub-item {
+  min-height: 160px;
+}
+
+@media (max-width: 980px) {
+  .section-match .section-stage {
+    min-height: auto;
+    padding: 1.25rem 0.75rem 0.9rem;
+    background-size: 178% auto;
+    background-position: 62% 30%;
+  }
+
+  .section-match .section-stage-top {
+    margin: 0;
+    text-align: right;
+  }
+
+  .section-match .section-stage-top h1 {
+    font-size: clamp(1.9rem, 7.8vw, 2.4rem);
+  }
+
+  .section-match .section-stage-grid {
+    width: 100%;
+  }
+
+  .section-match .hub-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 390px) {
+  .section-match .hub-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 980px) {
   .logo {
     gap: 0.52rem;
@@ -820,6 +1189,27 @@ h1 {
   .hero {
     grid-template-columns: 1fr;
     padding-top: 2.7rem;
+  }
+
+  .hero-modern {
+    background-size: 165% auto;
+    background-position: 74% center;
+    min-height: auto;
+  }
+
+  .hero-modern .hero-text {
+    text-align: right;
+    margin: 0;
+    max-width: none;
+    padding: 1.7rem 1rem 1.45rem;
+  }
+
+  .hub-item {
+    padding: 0.72rem 0.8rem;
+  }
+
+  .hub-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-proof {
@@ -967,6 +1357,10 @@ h1 {
 }
 
 @media (max-width: 390px) {
+  .hub-list {
+    grid-template-columns: 1fr;
+  }
+
   .logo-subtitle {
     display: none;
   }

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1630"/>
+      <stop offset="100%" stop-color="#071221"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#41c9ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#4ae3b5" stop-opacity="0.75"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1260" cy="220" r="180" fill="#41c9ff" fill-opacity="0.20" filter="url(#blur)"/>
+  <circle cx="340" cy="710" r="170" fill="#4ae3b5" fill-opacity="0.16" filter="url(#blur)"/>
+
+  <g opacity="0.55" stroke="url(#glow)" stroke-width="2">
+    <path d="M130 220 H430 L540 320 H790" />
+    <path d="M220 470 H520 L680 370 H1020" />
+    <path d="M350 640 H640 L780 520 H1160" />
+    <path d="M860 220 H1170 L1320 340 H1490" />
+    <path d="M900 520 H1220 L1350 450 H1520" />
+  </g>
+
+  <g fill="#bdefff">
+    <circle cx="130" cy="220" r="8"/>
+    <circle cx="430" cy="220" r="7"/>
+    <circle cx="540" cy="320" r="8"/>
+    <circle cx="790" cy="320" r="7"/>
+    <circle cx="220" cy="470" r="8"/>
+    <circle cx="520" cy="470" r="7"/>
+    <circle cx="680" cy="370" r="8"/>
+    <circle cx="1020" cy="370" r="7"/>
+    <circle cx="350" cy="640" r="8"/>
+    <circle cx="640" cy="640" r="7"/>
+    <circle cx="780" cy="520" r="8"/>
+    <circle cx="1160" cy="520" r="7"/>
+  </g>
+
+  <g opacity="0.45" stroke="#8fd8ff" stroke-width="1">
+    <rect x="1020" y="170" width="210" height="130" rx="16"/>
+    <rect x="1120" y="380" width="250" height="155" rx="16"/>
+    <rect x="750" y="560" width="220" height="130" rx="16"/>
+  </g>
+
+  <text x="1080" y="252" fill="#d6f5ff" fill-opacity="0.7" font-family="Verdana, sans-serif" font-size="32" font-weight="700">AI</text>
+  <text x="1180" y="472" fill="#d6f5ff" fill-opacity="0.62" font-family="Verdana, sans-serif" font-size="28" font-weight="700">DATA</text>
+  <text x="805" y="635" fill="#d6f5ff" fill-opacity="0.62" font-family="Verdana, sans-serif" font-size="28" font-weight="700">API</text>
+</svg>

@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TCG - تصميم مواقع وتطوير تطبيقات في ليبيا</title>
-  <meta name="description" content="The Code Gate (TCG) - شركة خدمات تقنية متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.">
-  <meta name="keywords" content="TCG, The Code Gate, شركة برمجة, شركة تقنية, تطوير مواقع, تصميم مواقع, برمجة مواقع, تطبيقات موبايل, تطوير تطبيقات, بوت واتساب, أتمتة واتساب, حلول تقنية, تطوير ويب, web development, mobile app development, WhatsApp automation, SEO, API integration">
+  <meta name="description" content="The Code Gate (TCG) - شركة خدمات تقنية في ليبيا متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.">
+  <meta name="keywords" content="TCG, شركة برمجة ليبيا, تطوير مواقع ليبيا, تطبيقات موبايل ليبيا, بوت واتساب ليبيا">
   <meta name="robots" content="index, follow">
   <meta name="author" content="The Code Gate (TCG)">
+  <meta name="geo.region" content="LY">
+  <meta name="geo.placename" content="Tripoli, Libya">
+  <meta name="ga4-measurement-id" content="">
   <meta name="theme-color" content="#070d18">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_LY">
@@ -21,7 +24,8 @@
   <meta name="twitter:description" content="شركة خدمات تقنية متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.">
   <meta name="twitter:image" content="https://tcg.com.ly/assets/logotcg.jpeg">
   <link rel="canonical" href="https://tcg.com.ly/">
-  <link rel="icon" type="image/jpeg" href="assets/logotcg.jpeg">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -40,15 +44,10 @@
               "@type": "ContactPoint",
               "contactType": "customer support",
               "email": "support@tcg.com.ly",
-              "availableLanguage": [
-                "ar",
-                "en"
-              ]
+              "availableLanguage": ["ar", "en"]
             }
           ],
-          "sameAs": [
-            "https://wa.me/218916510065"
-          ]
+          "sameAs": ["https://wa.me/218916510065"]
         },
         {
           "@type": "WebSite",
@@ -56,25 +55,6 @@
           "url": "https://tcg.com.ly/",
           "name": "The Code Gate (TCG)",
           "inLanguage": "ar"
-        },
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://tcg.com.ly/#service",
-          "name": "The Code Gate (TCG)",
-          "url": "https://tcg.com.ly/",
-          "description": "شركة خدمات تقنية متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.",
-          "areaServed": {
-            "@type": "Country",
-            "name": "Libya"
-          },
-          "serviceType": [
-            "Web Development",
-            "Mobile App Development",
-            "WhatsApp Automation"
-          ],
-          "provider": {
-            "@id": "https://tcg.com.ly/#organization"
-          }
         }
       ]
     }
@@ -84,7 +64,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-match">
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-noise" aria-hidden="true"></div>
   <div class="bg-shape bg-shape-1"></div>
@@ -92,16 +72,8 @@
 
   <header class="site-header">
     <nav class="container nav">
-      <a href="#" class="logo">
-        <img
-          src="assets/logotcg.jpeg"
-          alt="TCG Logo"
-          class="logo-img"
-          width="40"
-          height="40"
-          decoding="async"
-          fetchpriority="high"
-        >
+      <a href="index.html" class="logo">
+        <img src="assets/logotcg.jpeg" alt="TCG Logo" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high">
         <span class="logo-text-wrap">
           <span class="logo-title">The Code Gate</span>
           <span class="logo-subtitle">Digital Product Studio</span>
@@ -109,249 +81,64 @@
       </a>
       <button id="menuBtn" class="menu-btn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="menu">☰</button>
       <ul id="menu" class="menu">
-        <li><a href="#services">الخدمات</a></li>
-        <li><a href="#portfolio">الأعمال</a></li>
-        <li><a href="#pricing">الباقات</a></li>
-        <li><a href="#work">أعمالنا</a></li>
-        <li><a href="#faq">الأسئلة</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#contact">تواصل</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="portfolio.html">الأعمال</a></li>
+        <li><a href="pricing.html">الباقات</a></li>
+        <li><a href="work.html">طريقة العمل</a></li>
+        <li><a href="faq.html">الأسئلة</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">تواصل</a></li>
       </ul>
-      <a class="nav-cta" href="#contact">احجز استشارة</a>
+      <a class="nav-cta" href="contact.html">احجز استشارة</a>
     </nav>
   </header>
   <div id="menuOverlay" class="menu-overlay" aria-hidden="true"></div>
 
   <main>
-    <section class="hero container">
+    <section class="hero hero-modern container">
       <div class="hero-text reveal">
-        <p class="badge">حلول تقنية متكاملة</p>
-        <h1>نحوّل فكرتك إلى منتج رقمي قابل للنمو</h1>
-        <p class="hero-copy">
-          في <strong>The Code Gate (TCG)</strong> نبني حلول تقنية عملية تبدأ من موقع احترافي
-          أو تطبيق موبايل وتصل إلى أتمتة واتساب المتكاملة، بهدف رفع المبيعات وتحسين تجربة العملاء.
-        </p>
+        <p class="badge">حلول تقنية متكاملة في ليبيا</p>
+        <h1>نبني لك منتج رقمي قوي بدل موقع شكلي</h1>
+        <p class="hero-copy">في TCG نركز على النتائج: سرعة أعلى، تحويلات أفضل، وتجربة استخدام تدعم نمو أعمالك فعلياً.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">ابدأ مشروعك الآن</a>
-          <a class="btn btn-secondary" href="#services">استكشف الخدمات</a>
+          <a class="btn btn-primary" href="contact.html">ابدأ مشروعك</a>
+          <a class="btn btn-secondary" href="services.html">تصفح الخدمات</a>
         </div>
-        <div class="hero-proof">
-          <div class="proof-item">
-            <strong>120+</strong>
-            <span>مشروع تقني</span>
-          </div>
-          <div class="proof-item">
-            <strong>98%</strong>
-            <span>التزام بالمواعيد</span>
-          </div>
-          <div class="proof-item">
-            <strong>48h</strong>
-            <span>بدء التنفيذ</span>
-          </div>
+        <div class="hero-meta">
+          <p class="hero-trust">120+ مشروع ناجح • 98% التزام بالمواعيد • دعم فني مستمر</p>
+          <p class="hero-locations">نخدم: طرابلس، بنغازي، مصراتة، وكل ليبيا</p>
         </div>
       </div>
-      <div class="hero-showcase reveal">
-        <p class="showcase-title">الخدمات الأساسية</p>
-        <div class="showcase-list">
-          <div class="showcase-item">
-            <h3>Web Development</h3>
-            <p>مواقع شركات ومتاجر ولوحات تحكم بأداء سريع.</p>
-          </div>
-          <div class="showcase-item">
-            <h3>Mobile Applications</h3>
-            <p>تطبيقات iOS/Android بتجربة استخدام حديثة.</p>
-          </div>
-          <div class="showcase-item">
-            <h3>WhatsApp Automation</h3>
-            <p>بوتات ذكية للطلبات، الدعم، والمتابعة.</p>
-          </div>
+
+      <div class="section-hub reveal">
+        <h2 class="section-title">اختر القسم اللي تحتاجه</h2>
+        <div class="hub-list">
+          <a class="hub-item" href="services.html">
+            <span class="hub-icon">⌘</span>
+            <strong>تكامل البرمجيات</strong>
+            <span>تكامل الخدمات، من بناء الاستراتيجية في البرمجيات وحتى النشر</span>
+            <span class="hub-link">تصفح</span>
+          </a>
+          <a class="hub-item" href="portfolio.html">
+            <span class="hub-icon">📊</span>
+            <strong>تحليل البيانات</strong>
+            <span>تحليل البيانات الرقمية من أجل تحسين الأداء بشكل مستمر</span>
+            <span class="hub-link">تصفح</span>
+          </a>
+          <a class="hub-item" href="mobile-apps.html">
+            <span class="hub-icon">📱</span>
+            <strong>تطبيقات الهاتف</strong>
+            <span>تطبيقات موبايل متوافقة على iOS و Android</span>
+            <span class="hub-link">تصفح</span>
+          </a>
+          <a class="hub-item" href="web-development.html">
+            <span class="hub-icon">⌬</span>
+            <strong>تطوير الويب</strong>
+            <span>تفاصيل تطوير الويب من علي المنصات بشكل مستقل</span>
+            <span class="hub-link">تصفح</span>
+          </a>
         </div>
-        <div class="showcase-note">
-          <span>تكامل API</span>
-          <span>تحسين SEO</span>
-          <span>دعم مستمر</span>
-        </div>
       </div>
-    </section>
-
-    <section class="stats container reveal">
-      <article class="stat">
-        <p class="num" data-target="120">0</p>
-        <p>مشروع رقمي</p>
-      </article>
-      <article class="stat">
-        <p class="num" data-target="95">0</p>
-        <p>% نسبة رضا العملاء</p>
-      </article>
-      <article class="stat">
-        <p class="num" data-target="24">0</p>
-        <p>دعم فني/7 أيام</p>
-      </article>
-      <article class="stat">
-        <p class="num" data-target="8">0</p>
-        <p>سنوات خبرة تقنية</p>
-      </article>
-    </section>
-
-    <section id="services" class="services container">
-      <h2 class="section-title reveal">خدمات TCG</h2>
-      <div class="cards">
-        <article class="card reveal">
-          <h3>تطوير مواقع الويب</h3>
-          <p>مواقع سريعة ومتجاوبة تعكس هوية شركتك وتدعم نمو أعمالك.</p>
-        </article>
-        <article class="card reveal">
-          <h3>تطبيقات الموبايل وبوتات واتساب</h3>
-          <p>تطبيقات عملية مع أتمتة واتساب ذكية لرفع كفاءة الدعم والمبيعات.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="portfolio" class="portfolio container">
-      <h2 class="section-title reveal">نماذج من الأعمال</h2>
-      <div class="portfolio-grid">
-        <article class="portfolio-item reveal">
-          <p class="portfolio-tag">شركة خدمات</p>
-          <h3>موقع تعريفي مع لوحة إدارة</h3>
-          <p>بناء موقع شركة متكامل مع إدارة المحتوى، صفحات الخدمات، ونموذج طلبات متقدم.</p>
-          <a href="#contact">أريد شيئًا مشابهًا</a>
-        </article>
-        <article class="portfolio-item reveal">
-          <p class="portfolio-tag">موبايل + أتمتة</p>
-          <h3>تطبيق حجوزات مع بوت واتساب</h3>
-          <p>حل متكامل للإشعارات، إدارة المواعيد، واستقبال الطلبات عبر واتساب.</p>
-          <a href="#contact">أطلب تنفيذ مشابه</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="tech container reveal">
-      <h2 class="section-title">التقنيات التي نعمل بها</h2>
-      <div class="tech-list">
-        <span>React</span>
-        <span>Next.js</span>
-        <span>Node.js</span>
-        <span>Laravel</span>
-        <span>Flutter</span>
-        <span>Firebase</span>
-        <span>REST API</span>
-        <span>PostgreSQL</span>
-      </div>
-    </section>
-
-    <section id="pricing" class="pricing container">
-      <h2 class="section-title reveal">باقات مناسبة لمرحلة مشروعك</h2>
-      <div class="plans">
-        <article class="plan reveal">
-          <h3>باقة البداية</h3>
-          <p class="plan-sub">للشركات الناشئة</p>
-          <ul>
-            <li>موقع تعريفي احترافي</li>
-            <li>صفحات أساسية + نموذج تواصل</li>
-            <li>تحسين سرعة وأساسيات SEO</li>
-          </ul>
-          <a class="btn btn-secondary" href="#contact">اطلب الباقة</a>
-        </article>
-        <article class="plan plan-featured reveal">
-          <h3>باقة النمو</h3>
-          <p class="plan-sub">الأكثر طلبًا</p>
-          <ul>
-            <li>موقع أو تطبيق موبايل متكامل</li>
-            <li>لوحة تحكم وربط API</li>
-            <li>إطلاق ومتابعة وتطوير مستمر</li>
-          </ul>
-          <a class="btn btn-primary" href="#contact">ابدأ الآن</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="testimonials container reveal">
-      <h2 class="section-title">ماذا يقول عملاؤنا</h2>
-      <div class="testimonial-grid">
-        <blockquote class="quote">
-          <p>"الفريق قدّم موقعًا احترافيًا بسرعة عالية والتنفيذ كان واضحًا من أول يوم."</p>
-          <cite>مدير شركة تجارية</cite>
-        </blockquote>
-        <blockquote class="quote">
-          <p>"بوت واتساب خفف ضغط خدمة العملاء بشكل ملحوظ وزاد معدل التحويل."</p>
-          <cite>مسؤول مبيعات</cite>
-        </blockquote>
-      </div>
-    </section>
-
-    <section id="work" class="work container reveal">
-      <h2 class="section-title">طريقة عملنا</h2>
-      <div class="steps">
-        <div class="step"><span>1</span>تحليل المشروع والاحتياجات</div>
-        <div class="step"><span>2</span>تصميم واجهات وتجربة المستخدم</div>
-        <div class="step"><span>3</span>تطوير وتنفيذ الحل</div>
-        <div class="step"><span>4</span>اختبار، إطلاق، ودعم مستمر</div>
-      </div>
-    </section>
-
-    <section id="about" class="about container reveal">
-      <h2 class="section-title">من نحن</h2>
-      <p>
-        <strong>The Code Gate</strong> شركة تقنية تركّز على بناء حلول عملية وقابلة للتوسع.
-        هدفنا تحويل فكرتك إلى منتج رقمي فعّال يحقق نتائج حقيقية.
-      </p>
-    </section>
-
-    <section id="faq" class="faq container reveal">
-      <h2 class="section-title">الأسئلة الشائعة</h2>
-      <details>
-        <summary>كم مدة تنفيذ الموقع أو التطبيق؟</summary>
-        <p>تختلف المدة حسب المتطلبات، لكن عادة تبدأ من 2 إلى 8 أسابيع بعد اعتماد الخطة.</p>
-      </details>
-      <details>
-        <summary>هل تقدمون دعمًا بعد التسليم؟</summary>
-        <p>نعم، نوفر دعمًا فنيًا وتحديثات دورية حسب الباقة المتفق عليها.</p>
-      </details>
-      <details>
-        <summary>هل يمكن ربط البوت مع نظام المبيعات؟</summary>
-        <p>نعم، ننفذ تكاملات API مع أنظمة CRM والمبيعات وخدمة العملاء.</p>
-      </details>
-    </section>
-
-    <section id="contact" class="contact container reveal">
-      <h2 class="section-title">تواصل معنا</h2>
-      <p>جاهزون لبناء مشروعك القادم. أرسل لنا تفاصيل فكرتك وسنعود إليك بسرعة.</p>
-      <div class="contact-info">
-        <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@tcg.com.ly">info@tcg.com.ly</a></p>
-        <p><strong>الدعم الفني:</strong> <a href="mailto:support@tcg.com.ly">support@tcg.com.ly</a></p>
-        <p><strong>م. فراس حمامي:</strong> <a href="tel:0916510065">0916510065</a></p>
-        <p><strong>م. محمد الافي:</strong> <a href="tel:0922917708">0922917708</a></p>
-      </div>
-      <form class="contact-form">
-        <label for="name">الاسم</label>
-        <input id="name" type="text" placeholder="اسمك الكامل" required>
-        <label for="phone">رقم الجوال / واتساب</label>
-        <input id="phone" type="text" placeholder="+218..." required>
-        <label for="service">الخدمة المطلوبة</label>
-        <select id="service">
-          <option value="تطوير موقع">تطوير موقع</option>
-          <option value="تطبيق موبايل">تطبيق موبايل</option>
-          <option value="بوت واتساب">بوت واتساب</option>
-          <option value="حل تقني متكامل">حل تقني متكامل</option>
-        </select>
-        <label for="contactPerson">التواصل مع</label>
-        <select id="contactPerson">
-          <option value="firas">م. فراس حمامي</option>
-          <option value="mohammed">م. محمد الافي</option>
-        </select>
-        <label for="details">تفاصيل المشروع</label>
-        <textarea id="details" rows="4" placeholder="اكتب المطلوب هنا..." required></textarea>
-        <button id="sendBtn" type="button" class="btn btn-primary">إرسال الطلب عبر واتساب</button>
-        <p id="formStatus" class="form-status" aria-live="polite"></p>
-      </form>
-    </section>
-
-    <section class="cta-band container reveal">
-      <div>
-        <h2>جاهز تنقل فكرتك للمرحلة التالية؟</h2>
-        <p>احجز مكالمة تعريفية قصيرة، ونجهز لك تصور تنفيذي واضح خلال نفس اليوم.</p>
-      </div>
-      <a class="btn btn-primary" href="#contact">احجز الآن</a>
     </section>
   </main>
 
@@ -361,9 +148,7 @@
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/218916510065" target="_blank" rel="noopener noreferrer" aria-label="تواصل واتساب">
-    واتساب
-  </a>
+  <a class="floating-wa" href="https://wa.me/218916510065" target="_blank" rel="noopener noreferrer" aria-label="تواصل واتساب">واتساب</a>
   <button id="scrollTopBtn" class="scroll-top" type="button" aria-label="العودة للأعلى">↑</button>
 
   <script src="script.js" defer></script>

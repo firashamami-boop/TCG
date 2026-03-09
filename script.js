@@ -5,6 +5,29 @@ const sendBtn = document.getElementById("sendBtn");
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 const formStatus = document.getElementById("formStatus");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const gaMeasurementId = document
+  .querySelector('meta[name="ga4-measurement-id"]')
+  ?.getAttribute("content")
+  ?.trim();
+
+const trackEvent = (eventName, params = {}) => {
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", eventName, params);
+};
+
+if (gaMeasurementId) {
+  const gaScript = document.createElement("script");
+  gaScript.async = true;
+  gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaMeasurementId)}`;
+  document.head.appendChild(gaScript);
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() {
+    window.dataLayer.push(arguments);
+  };
+  window.gtag("js", new Date());
+  window.gtag("config", gaMeasurementId);
+}
 
 const sectionLinks = Array.from(document.querySelectorAll(".menu a"));
 const sectionMap = sectionLinks
@@ -39,6 +62,7 @@ menuBtn?.addEventListener("click", () => {
     return;
   }
   openMenu();
+  trackEvent("mobile_menu_open", { page_path: window.location.pathname });
 });
 menu?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 menuOverlay?.addEventListener("click", closeMenu);
@@ -141,7 +165,38 @@ sendBtn?.addEventListener("click", () => {
 
   setStatus("جاري فتح واتساب...", false);
   const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+  trackEvent("generate_lead", {
+    method: "whatsapp_form",
+    service_interest: service,
+    destination_contact: waNumber,
+  });
   window.open(waLink, "_blank", "noopener");
+});
+
+document.querySelectorAll("a[href^='tel:']").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackEvent("contact_click", { method: "phone", value: link.getAttribute("href") || "" });
+  });
+});
+
+document.querySelectorAll("a[href^='mailto:']").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackEvent("contact_click", { method: "email", value: link.getAttribute("href") || "" });
+  });
+});
+
+document.querySelectorAll("a[href*='wa.me']").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackEvent("contact_click", { method: "whatsapp", source: "direct_link" });
+  });
+});
+
+document.querySelectorAll("a[href$='.html']").forEach((link) => {
+  link.addEventListener("click", () => {
+    const href = link.getAttribute("href") || "";
+    if (!href || href.startsWith("index.html#")) return;
+    trackEvent("service_page_click", { target_page: href });
+  });
 });
 
 const setActiveLink = () => {
