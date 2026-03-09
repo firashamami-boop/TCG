@@ -3,14 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TCG - نصميم مواقع وتطوير تطبيقات في ليبيا </title>
+  <title>TCG - تصميم مواقع وتطوير تطبيقات في ليبيا</title>
   <meta name="description" content="The Code Gate (TCG) - شركة خدمات تقنية متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.">
   <meta name="keywords" content="TCG, The Code Gate, شركة برمجة, شركة تقنية, تطوير مواقع, تصميم مواقع, برمجة مواقع, تطبيقات موبايل, تطوير تطبيقات, بوت واتساب, أتمتة واتساب, حلول تقنية, تطوير ويب, web development, mobile app development, WhatsApp automation, SEO, API integration">
   <meta name="robots" content="index, follow">
   <meta name="author" content="The Code Gate (TCG)">
+  <meta name="theme-color" content="#070d18">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_LY">
+  <meta property="og:title" content="TCG - تصميم مواقع وتطوير تطبيقات في ليبيا">
+  <meta property="og:description" content="شركة خدمات تقنية متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.">
+  <meta property="og:url" content="https://tcg.com.ly/">
+  <meta property="og:site_name" content="The Code Gate (TCG)">
+  <meta property="og:image" content="https://tcg.com.ly/assets/logotcg.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TCG - تصميم مواقع وتطوير تطبيقات في ليبيا">
+  <meta name="twitter:description" content="شركة خدمات تقنية متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.">
+  <meta name="twitter:image" content="https://tcg.com.ly/assets/logotcg.jpeg">
+  <link rel="canonical" href="https://tcg.com.ly/">
+  <link rel="icon" type="image/jpeg" href="assets/logotcg.jpeg">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://tcg.com.ly/#organization",
+          "name": "The Code Gate",
+          "alternateName": "TCG",
+          "url": "https://tcg.com.ly/",
+          "logo": "https://tcg.com.ly/assets/logotcg.jpeg",
+          "email": "mailto:firashamamim@gmail.com",
+          "telephone": "+218916510065",
+          "sameAs": [
+            "https://wa.me/218916510065"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://tcg.com.ly/#website",
+          "url": "https://tcg.com.ly/",
+          "name": "The Code Gate (TCG)",
+          "inLanguage": "ar"
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://tcg.com.ly/#service",
+          "name": "The Code Gate (TCG)",
+          "url": "https://tcg.com.ly/",
+          "description": "شركة خدمات تقنية متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Libya"
+          },
+          "serviceType": [
+            "Web Development",
+            "Mobile App Development",
+            "WhatsApp Automation"
+          ],
+          "provider": {
+            "@id": "https://tcg.com.ly/#organization"
+          }
+        }
+      ]
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,8 +82,19 @@
   <header class="site-header">
     <nav class="container nav">
       <a href="#" class="logo">
-        <span class="logo-mark">TCG</span>
-        <span class="logo-text">The Code Gate</span>
+        <img
+          src="assets/logotcg.jpeg"
+          alt="TCG Logo"
+          class="logo-img"
+          width="40"
+          height="40"
+          decoding="async"
+          fetchpriority="high"
+        >
+        <span class="logo-text-wrap">
+          <span class="logo-title">The Code Gate</span>
+          <span class="logo-subtitle">Digital Product Studio</span>
+        </span>
       </a>
       <button id="menuBtn" class="menu-btn" aria-label="فتح القائمة">☰</button>
       <ul id="menu" class="menu">
@@ -242,7 +313,7 @@
         <label for="name">الاسم</label>
         <input id="name" type="text" placeholder="اسمك الكامل" required>
         <label for="phone">رقم الجوال / واتساب</label>
-        <input id="phone" type="text" placeholder="+966..." required>
+        <input id="phone" type="text" placeholder="+218..." required>
         <label for="service">الخدمة المطلوبة</label>
         <select id="service">
           <option value="تطوير موقع">تطوير موقع</option>
@@ -282,6 +353,6 @@
   </a>
   <button id="scrollTopBtn" class="scroll-top" type="button" aria-label="العودة للأعلى">↑</button>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
