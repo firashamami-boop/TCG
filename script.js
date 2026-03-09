@@ -1,5 +1,6 @@
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
+const menuOverlay = document.getElementById("menuOverlay");
 const sendBtn = document.getElementById("sendBtn");
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 const formStatus = document.getElementById("formStatus");
@@ -16,10 +17,31 @@ const sectionMap = sectionLinks
   })
   .filter(Boolean);
 
-const closeMenu = () => menu?.classList.remove("open");
+const isMobileNav = () => window.matchMedia("(max-width: 980px)").matches;
 
-menuBtn?.addEventListener("click", () => menu?.classList.toggle("open"));
+const closeMenu = () => {
+  menu?.classList.remove("open");
+  menuOverlay?.classList.remove("show");
+  menuBtn?.setAttribute("aria-expanded", "false");
+  if (isMobileNav()) document.body.classList.remove("nav-open");
+};
+
+const openMenu = () => {
+  menu?.classList.add("open");
+  menuOverlay?.classList.add("show");
+  menuBtn?.setAttribute("aria-expanded", "true");
+  if (isMobileNav()) document.body.classList.add("nav-open");
+};
+
+menuBtn?.addEventListener("click", () => {
+  if (menu?.classList.contains("open")) {
+    closeMenu();
+    return;
+  }
+  openMenu();
+});
 menu?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+menuOverlay?.addEventListener("click", closeMenu);
 
 document.addEventListener("click", (event) => {
   if (!menu?.classList.contains("open")) return;
@@ -31,6 +53,13 @@ document.addEventListener("click", (event) => {
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeMenu();
+});
+
+window.addEventListener("resize", () => {
+  if (!isMobileNav()) {
+    document.body.classList.remove("nav-open");
+    menuOverlay?.classList.remove("show");
+  }
 });
 
 const revealObserver = new IntersectionObserver((entries) => {
