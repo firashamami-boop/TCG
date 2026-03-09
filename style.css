@@ -835,11 +835,11 @@ h1 {
   .menu {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     width: min(300px, 82vw);
     height: 100dvh;
-    border-left: 1px solid rgba(123, 155, 214, 0.36);
-    background: linear-gradient(180deg, rgba(8, 14, 26, 0.98), rgba(7, 12, 23, 0.98));
+    border-right: 1px solid rgba(123, 155, 214, 0.44);
+    background: linear-gradient(180deg, rgba(7, 13, 24, 0.995), rgba(8, 15, 28, 0.995));
     border-radius: 0;
     padding: 6.2rem 0.9rem 1rem;
     display: flex;
@@ -847,7 +847,7 @@ h1 {
     align-items: stretch;
     gap: 0.42rem;
     box-shadow: var(--shadow-md);
-    transform: translateX(104%);
+    transform: translateX(-104%);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -865,14 +865,15 @@ h1 {
   .menu a {
     padding: 0.58rem 0.86rem;
     font-size: 1.08rem;
+    color: var(--text);
+    background: rgba(65, 201, 255, 0.08);
   }
 
   .menu-overlay {
     position: fixed;
     inset: 0;
     display: block;
-    background: rgba(2, 8, 17, 0.48);
-    backdrop-filter: blur(1.5px);
+    background: rgba(2, 8, 17, 0.38);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
