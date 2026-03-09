@@ -829,6 +829,12 @@ h1 {
 
   .menu-btn {
     display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    border-color: rgba(123, 155, 214, 0.5);
+    background: linear-gradient(165deg, rgba(11, 20, 37, 0.96), rgba(7, 14, 26, 0.96));
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.34);
     z-index: 65;
   }
 
@@ -836,23 +842,39 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    width: min(300px, 82vw);
+    width: min(330px, 86vw);
     height: 100dvh;
-    border-right: 1px solid rgba(123, 155, 214, 0.44);
-    background: linear-gradient(180deg, rgba(7, 13, 24, 0.995), rgba(8, 15, 28, 0.995));
-    border-radius: 0;
-    padding: 6.2rem 0.9rem 1rem;
+    border-right: 1px solid rgba(123, 155, 214, 0.42);
+    background:
+      radial-gradient(circle at 12% 8%, rgba(65, 201, 255, 0.18), transparent 44%),
+      linear-gradient(180deg, rgba(7, 13, 24, 0.995), rgba(9, 16, 30, 0.995));
+    border-radius: 0 24px 24px 0;
+    padding: 6.2rem 1rem 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 0.42rem;
-    box-shadow: var(--shadow-md);
-    transform: translateX(-104%);
+    gap: 0.52rem;
+    box-shadow: 0 28px 48px rgba(0, 0, 0, 0.46);
+    transform: translateX(calc(-100% - 20px));
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: transform 0.28s ease, opacity 0.22s ease;
+    transition: transform 0.28s ease, opacity 0.24s ease;
     z-index: 70;
+  }
+
+  .menu::before {
+    content: "التنقل";
+    display: block;
+    font-size: 0.74rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin: 0.1rem 0 0.4rem;
+    padding: 0 0.32rem;
+  }
+
+  .menu li {
+    width: 100%;
   }
 
   .menu.open {
@@ -863,17 +885,43 @@ h1 {
   }
 
   .menu a {
-    padding: 0.58rem 0.86rem;
-    font-size: 1.08rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.72rem 0.9rem;
+    font-size: 1.04rem;
+    font-weight: 700;
     color: var(--text);
-    background: rgba(65, 201, 255, 0.08);
+    background: linear-gradient(145deg, rgba(65, 201, 255, 0.1), rgba(74, 227, 181, 0.04));
+    border: 1px solid rgba(123, 155, 214, 0.3);
+    border-radius: 14px;
+  }
+
+  .menu a::after {
+    content: "←";
+    font-size: 0.88rem;
+    color: rgba(196, 216, 255, 0.75);
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .menu a:hover,
+  .menu a.active {
+    color: #f5fbff;
+    border-color: rgba(74, 227, 181, 0.45);
+    background: linear-gradient(145deg, rgba(65, 201, 255, 0.22), rgba(74, 227, 181, 0.13));
+  }
+
+  .menu a:hover::after,
+  .menu a.active::after {
+    transform: translateX(-3px);
+    color: #cffff0;
   }
 
   .menu-overlay {
     position: fixed;
     inset: 0;
     display: block;
-    background: rgba(2, 8, 17, 0.38);
+    background: rgba(2, 8, 17, 0.52);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
