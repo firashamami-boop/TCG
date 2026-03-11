@@ -131,14 +131,15 @@ const pageContentTranslations = {
     { selector: ".studio-actions .btn-primary", en: "Start Your Project" },
     { selector: ".studio-actions .btn-secondary", en: "Compare Plans" },
     { selector: ".studio-section-head h2", en: ["Choose the track that matches your current stage", "What makes our service delivery different"] },
-    { selector: ".studio-link-card h3", en: ["Web Development", "Mobile Apps", "WhatsApp Bots", "Custom Solution"] },
+    { selector: ".studio-link-card h3", en: ["Web Development", "Mobile Apps", "WhatsApp Bots", "OTP Service", "Custom Solution"] },
     { selector: ".studio-link-card p", en: [
       "Corporate websites, landing pages, dashboards, and user experiences built for speed, clarity, and conversion.",
       "Mobile products for bookings, orders, daily workflows, or delivering a complete service on iOS and Android.",
       "Automated conversations, order intake, categorization, and routing into the team or internal system without manual load.",
+      "One-time password delivery for signup, login, and transaction verification flows across your apps and platforms.",
       "If your project spans multiple channels, we define the right scope, plan, and launch phase before execution."
     ] },
-    { selector: ".studio-link-arrow", en: ["Explore", "Explore", "Explore", "Book a Session"] },
+    { selector: ".studio-link-arrow", en: ["Explore", "Explore", "Explore", "Explore", "Book a Session"] },
     { selector: ".studio-grid-3 .studio-card h3", en: ["Planning before delivery", "Intentional integrations", "Ready to scale"] },
     { selector: ".studio-grid-3 .studio-card p", en: [
       "We start from the real business goal and define flows, screens, and priorities before building.",
@@ -340,6 +341,40 @@ const pageContentTranslations = {
     { selector: ".footer-brand p", en: "Automation for us is a tool to improve operations and sales, not just repeated auto-replies." },
     { selector: ".footer-shell > .footer-links:nth-of-type(2) a", en: ["WhatsApp Bots", "Services", "Process", "Contact"] },
     { selector: ".footer-shell > .footer-links:nth-of-type(3) a", en: ["Work", "Pricing", "FAQ", "WhatsApp Direct"] },
+  ],
+  "otp-service.html": [
+    { selector: "title", mode: "text", en: "OTP Service in Libya | TCG" },
+    { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "TCG OTP service for one-time password delivery across signup, login, and transaction verification flows." },
+    { selector: ".section-stage:nth-of-type(1) h1", en: "Reliable OTP delivery for identity and transaction verification" },
+    { selector: ".section-stage:nth-of-type(1) .section-stage-top > p:not(.badge):not(.hero-trust):not(.hero-locations)", en: "We provide OTP solutions for one-time verification codes across apps and platforms, supporting signup, login, two-factor authentication, and sensitive action confirmation." },
+    { selector: ".section-stage:nth-of-type(1) .btn-primary", en: "Request the Service" },
+    { selector: ".section-stage:nth-of-type(1) .btn-secondary", en: "Back to Services" },
+    { selector: ".hero-trust", mode: "html", en: "<span>⎯</span> Faster delivery • Flexible integration • Clearer verification experience" },
+    { selector: ".hero-locations", mode: "html", en: "<span>⌖</span> Built for apps, e-commerce, dashboards, and financial workflows" },
+    { selector: ".auto-card strong", en: ["Fast verification", "Two-factor authentication", "API integration", "Higher reliability"] },
+    { selector: ".auto-card p", en: [
+      "Instant code delivery to support user signup and secure account access.",
+      "An added security layer to protect accounts and sensitive operations inside your system.",
+      "Flexible integration with your existing apps or systems so OTP can be deployed without unnecessary complexity.",
+      "A clear send-and-verify flow that improves delivery success and reduces user friction during verification."
+    ] },
+    { selector: ".section-stage:nth-of-type(2) .badge", en: "Use Cases" },
+    { selector: ".section-stage:nth-of-type(2) h2", en: "When do you need OTP inside your product?" },
+    { selector: ".section-stage:nth-of-type(2) .section-stage-top p", en: "This service fits any product that needs fast and secure user verification or confirmation of an important action." },
+    { selector: ".section-stage:nth-of-type(2) .auto-card strong", en: ["New account signup", "User login", "Transaction approval", "Access recovery"] },
+    { selector: ".section-stage:nth-of-type(2) .auto-card p", en: [
+      "Verify the phone number during signup to improve data quality and reduce fake accounts.",
+      "Add extra protection when users sign in, especially for sensitive or permission-heavy systems.",
+      "Confirm payment, withdrawal, or sensitive data updates to improve platform and user security.",
+      "Verify identity during account recovery or password reset with a fast and secure flow."
+    ] },
+    { selector: ".section-stage:nth-of-type(3) .badge", en: "Launch Ready" },
+    { selector: ".section-stage:nth-of-type(3) h2", en: "If you need OTP inside your current product, we can structure it quickly and clearly." },
+    { selector: ".section-stage:nth-of-type(3) .btn-primary", en: "Start Now" },
+    { selector: ".section-stage:nth-of-type(3) .btn-secondary", en: "View Pricing" },
+    { selector: ".footer-brand p", en: "Our OTP solutions are built for secure, fast verification experiences that integrate cleanly with your digital products." },
+    { selector: ".footer-shell > .footer-links:nth-of-type(2) a", en: ["OTP Service", "Services", "Pricing", "Contact"] },
+    { selector: ".footer-shell > .footer-links:nth-of-type(3) a", en: ["Work", "Process", "FAQ", "WhatsApp Direct"] },
   ],
 };
 
