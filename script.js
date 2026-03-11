@@ -77,7 +77,7 @@ const pageContentTranslations = {
     { selector: "title", mode: "text", en: "TCG - Web Design and App Development in Libya" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "The Code Gate (TCG) is a Libya-based digital studio focused on websites, mobile apps, and WhatsApp automation." },
     { selector: ".hero-scene-copy .badge", en: "Integrated tech solutions in Libya" },
-    { selector: ".hero-scene-copy h1", en: "We build a real digital product, not a decorative website" },
+    { selector: ".hero-scene-copy h1", en: "Build a digital product that drives real business growth" },
     { selector: ".hero-copy", en: "At TCG, we focus on outcomes: stronger speed, better conversion, and a user experience that supports real growth." },
     { selector: ".hero-scene-copy .btn-primary", en: "Start Your Project" },
     { selector: ".hero-scene-copy .btn-secondary", en: "Browse Services" },
@@ -126,7 +126,7 @@ const pageContentTranslations = {
   "services.html": [
     { selector: "title", mode: "text", en: "Services | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "TCG digital services in Libya: web development, mobile apps, and WhatsApp automation." },
-    { selector: ".studio-hero-copy h1", en: "Services organized like a digital product system, not a generic list" },
+    { selector: ".studio-hero-copy h1", en: "Digital services structured to support your growth" },
     { selector: ".studio-hero-copy p", en: "Each path here is built around a clear outcome: acquiring customers, operating a service, automating workflows, or building a scalable product." },
     { selector: ".studio-actions .btn-primary", en: "Start Your Project" },
     { selector: ".studio-actions .btn-secondary", en: "Compare Plans" },
@@ -153,7 +153,7 @@ const pageContentTranslations = {
   "portfolio.html": [
     { selector: "title", mode: "text", en: "Work | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "Selected project patterns and digital product execution examples from TCG." },
-    { selector: ".studio-hero-copy h1", en: "Work presented as systems and outcomes, not static images" },
+    { selector: ".studio-hero-copy h1", en: "Digital work that reflects execution quality and real impact" },
     { selector: ".studio-hero-copy p", en: "Instead of a conventional gallery, this page shows the kinds of products we actually build: platforms, apps, automation, and operating dashboards." },
     { selector: ".studio-actions .btn-primary", en: "Request a Similar Project" },
     { selector: ".studio-actions .btn-secondary", en: "Back to Services" },
@@ -180,7 +180,7 @@ const pageContentTranslations = {
   "pricing.html": [
     { selector: "title", mode: "text", en: "Pricing | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "TCG pricing tiers designed around your growth stage, from launch to scale and custom execution." },
-    { selector: ".studio-hero-copy h1", en: "Plans built around growth stage, not random feature lists" },
+    { selector: ".studio-hero-copy h1", en: "Flexible plans aligned with your project stage" },
     { selector: ".studio-hero-copy p", en: "This page is designed to simplify the decision: what fits a new project, what fits expansion, and when a custom plan is the right path." },
     { selector: ".studio-section-head h2", en: "Choose the execution layer that fits now" },
     { selector: ".studio-tier h3", en: ["Launch Plan", "Growth Plan", "Scale Plan", "Custom Plan"] },
@@ -207,7 +207,7 @@ const pageContentTranslations = {
   "work.html": [
     { selector: "title", mode: "text", en: "Process | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "A clear TCG delivery process from discovery to launch and optimization." },
-    { selector: ".studio-hero-copy h1", en: "A transparent process that removes chaos before delivery begins" },
+    { selector: ".studio-hero-copy h1", en: "A clear delivery process built for efficient execution" },
     { selector: ".studio-hero-copy p", en: "We structure the project into clear stages: understand, decide, design, build, then improve. The client always knows what is happening now and what comes next." },
     { selector: ".studio-timeline-step h3", en: ["Need analysis", "Define the right solution", "Design the experience", "Build and deliver", "Launch and improve"] },
     { selector: ".studio-timeline-step p", en: [
@@ -224,7 +224,7 @@ const pageContentTranslations = {
   "faq.html": [
     { selector: "title", mode: "text", en: "FAQ | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "Frequently asked questions about TCG delivery timelines, support, integrations, and custom work." },
-    { selector: ".studio-hero-copy h1", en: "Frequently asked questions with direct, practical answers" },
+    { selector: ".studio-hero-copy h1", en: "Clear answers before your project begins" },
     { selector: ".studio-hero-copy p", en: "Instead of vague cards or long explanations, we focused here on the questions that affect the decision to start: timeline, support, integrations, and flexibility." },
     { selector: ".studio-faq summary", en: [
       "How long does delivery usually take?",
@@ -250,7 +250,7 @@ const pageContentTranslations = {
   "about.html": [
     { selector: "title", mode: "text", en: "About | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "About The Code Gate: a digital product team connecting strategy, experience, development, and operations." },
-    { selector: ".studio-hero-copy h1", en: "TCG is a digital product team connecting idea and execution" },
+    { selector: ".studio-hero-copy h1", en: "A digital team that turns ideas into practical products" },
     { selector: ".studio-hero-copy p", en: "We do not work as isolated page builders. We work as a team that shapes how the product should appear, how it should serve the user, and how it should connect to daily operations." },
     { selector: ".studio-metric-card span", en: ["Experience clarity", "Intentional delivery", "Connected operations"] },
     { selector: ".studio-grid-2 .studio-card h3", en: ["Our vision", "Our method", "Our focus", "How we collaborate"] },
@@ -267,7 +267,7 @@ const pageContentTranslations = {
   "contact.html": [
     { selector: "title", mode: "text", en: "Contact | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "Contact TCG through email, direct phone, or the WhatsApp project request form." },
-    { selector: ".studio-hero-copy h1", en: "A cleaner, clearer, more professional contact page" },
+    { selector: ".studio-hero-copy h1", en: "Start the conversation with clarity and confidence" },
     { selector: ".studio-hero-copy p", en: "Choose the right channel or send your request directly through the form. The page is built to reduce friction and make the next step obvious." },
     { selector: ".studio-contact-cards .studio-card h3", en: ["Primary Email", "Technical Support", "Eng. Firas Hammami", "Eng. Mohammed Alafi"] },
     { selector: 'label[for="name"]', en: "Name" },
@@ -291,7 +291,7 @@ const pageContentTranslations = {
   "mobile-apps.html": [
     { selector: "title", mode: "text", en: "Mobile Apps in Libya | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "Professional iOS and Android mobile app development in Libya by TCG." },
-    { selector: ".section-stage-top h1", en: "Mobile apps with a lighter, more dynamic product feel" },
+    { selector: ".section-stage-top h1", en: "Mobile app experiences built for everyday use" },
     { selector: ".section-stage-top p", en: "Instead of repeating generic cards, this page now presents the service inside a flexible, more readable product grid." },
     { selector: ".section-stage-top .btn-primary", en: "Start Your App" },
     { selector: ".section-stage-top .btn-secondary", en: "Back to Services" },
@@ -309,7 +309,7 @@ const pageContentTranslations = {
   "web-development.html": [
     { selector: "title", mode: "text", en: "Web Development in Libya | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "Professional web development in Libya by TCG." },
-    { selector: ".section-stage-top h1", en: "Professional web development with a more future-ready structure" },
+    { selector: ".section-stage-top h1", en: "Professional web experiences built for speed and growth" },
     { selector: ".section-stage-top p", en: "Instead of one repeated row of cards, this page now presents a clearer capability view for the service." },
     { selector: ".section-stage-top .btn-primary", en: "Request a Quote" },
     { selector: ".section-stage-top .btn-secondary", en: "Back to Services" },
@@ -327,7 +327,7 @@ const pageContentTranslations = {
   "whatsapp-automation.html": [
     { selector: "title", mode: "text", en: "WhatsApp Bots in Libya | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "WhatsApp automation for businesses in Libya by TCG." },
-    { selector: ".section-stage-top h1", en: "WhatsApp bots for smarter sales automation" },
+    { selector: ".section-stage-top h1", en: "WhatsApp automation designed for faster sales and support" },
     { selector: ".section-stage-top p", en: "Instead of repeating the same section style, this page presents the service as a clearer, more specialized automation flow." },
     { selector: ".section-stage-top .btn-primary", en: "Request a WhatsApp Bot" },
     { selector: ".section-stage-top .btn-secondary", en: "Back to Services" },
@@ -345,7 +345,7 @@ const pageContentTranslations = {
   "otp-service.html": [
     { selector: "title", mode: "text", en: "OTP Service in Libya | TCG" },
     { selector: 'meta[name="description"]', mode: "attr", attr: "content", en: "TCG OTP service for one-time password delivery across signup, login, and transaction verification flows." },
-    { selector: ".section-stage:nth-of-type(1) h1", en: "Reliable OTP delivery for identity and transaction verification" },
+    { selector: ".section-stage:nth-of-type(1) h1", en: "Secure OTP delivery built for modern digital products" },
     { selector: ".section-stage:nth-of-type(1) .section-stage-top > p:not(.badge):not(.hero-trust):not(.hero-locations)", en: "We provide OTP solutions for one-time verification codes across apps and platforms, supporting signup, login, two-factor authentication, and sensitive action confirmation." },
     { selector: ".section-stage:nth-of-type(1) .btn-primary", en: "Request the Service" },
     { selector: ".section-stage:nth-of-type(1) .btn-secondary", en: "Back to Services" },
