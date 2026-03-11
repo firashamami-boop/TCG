@@ -1840,12 +1840,8 @@ body.ui-en .lang-toggle {
     gap: 0;
   }
 
-  .home-service-card:nth-child(2n) {
+  .home-service-card:nth-child(2n + 1) {
     border-left: 0;
-  }
-
-  .home-service-card:nth-child(4n + 1) {
-    border-left: 1px solid rgba(103, 139, 203, 0.14);
   }
 
   .home-service-card:first-child {

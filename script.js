@@ -84,14 +84,15 @@ const pageContentTranslations = {
     { selector: ".hero-trust", mode: "html", en: "<span>⎯</span> 120+ successful projects • 98% on-time delivery • Ongoing technical support" },
     { selector: ".hero-locations", mode: "html", en: "<span>⌖</span> Serving Tripoli, Benghazi, Misrata, and all of Libya" },
     { selector: ".home-service-deck .section-title", en: "Choose the section you need" },
-    { selector: ".home-service-card strong", en: ["Services", "Work", "Pricing", "Process"] },
+    { selector: ".home-service-card strong", en: ["Services", "Work", "Pricing", "OTP Service", "Process"] },
     { selector: ".home-service-card p", en: [
       "All TCG digital services in one place: web, mobile, automation, and integrations.",
       "Execution samples and project patterns that show the quality of experience and outcomes you can reach.",
       "Flexible plans for small, growing, and custom implementation needs.",
+      "One-time password solutions for signup, login, and transaction verification inside your digital products.",
       "See how we move from analysis to launch and follow-up in clear stages."
     ] },
-    { selector: ".home-service-link", en: ["Explore", "Explore", "Explore", "Explore"] },
+    { selector: ".home-service-link", en: ["Explore", "Explore", "Explore", "Explore", "Explore"] },
     { selector: ".home-insight-copy .badge", en: "Why TCG" },
     { selector: ".home-insight-copy h2", en: "We turn an idea into a digital experience built to grow" },
     { selector: ".home-insight-copy p", en: "We do not just build an interface. We design the full journey across brand, performance, usability, and scalability as your project grows." },
