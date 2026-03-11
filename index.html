@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TCG - تصميم مواقع وتطوير تطبيقات في ليبيا</title>
   <meta name="description" content="The Code Gate (TCG) - شركة خدمات تقنية في ليبيا متخصصة في تطوير المواقع، تطبيقات الموبايل، وبوتات واتساب.">
-  <meta name="keywords" content="TCG, شركة برمجة ليبيا, تطوير مواقع ليبيا, تطبيقات موبايل ليبيا, بوت واتساب ليبيا">
+  <meta name="keywords" content="TCG, The Code Gate, شركة برمجة ليبيا, خدمات TCG, تطوير مواقع ليبيا, تطبيقات موبايل ليبيا, بوت واتساب ليبيا, حلول تقنية ليبيا">
   <meta name="robots" content="index, follow">
   <meta name="author" content="The Code Gate (TCG)">
   <meta name="geo.region" content="LY">
@@ -38,7 +38,7 @@
           "url": "https://tcg.com.ly/",
           "logo": "https://tcg.com.ly/assets/logotcg.jpeg",
           "email": "mailto:info@tcg.com.ly",
-          "telephone": "+218916510065",
+          "telephone": "+218946510065",
           "contactPoint": [
             {
               "@type": "ContactPoint",
@@ -47,7 +47,7 @@
               "availableLanguage": ["ar", "en"]
             }
           ],
-          "sameAs": ["https://wa.me/218916510065"]
+          "sameAs": ["https://wa.me/218946510065"]
         },
         {
           "@type": "WebSite",
@@ -64,7 +64,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="home-match">
+<body class="home-match page-home">
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-noise" aria-hidden="true"></div>
   <div class="bg-shape bg-shape-1"></div>
@@ -81,22 +81,32 @@
       </a>
       <button id="menuBtn" class="menu-btn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="menu">☰</button>
       <ul id="menu" class="menu">
-        <li><a href="services.html">الخدمات</a></li>
-        <li><a href="portfolio.html">الأعمال</a></li>
-        <li><a href="pricing.html">الباقات</a></li>
-        <li><a href="work.html">طريقة العمل</a></li>
-        <li><a href="faq.html">الأسئلة</a></li>
-        <li><a href="about.html">من نحن</a></li>
-        <li><a href="contact.html">تواصل</a></li>
+        <li><a href="index.html" data-i18n="nav.home">الشاشة الرئيسية</a></li>
+        <li><a href="services.html" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">الأعمال</a></li>
+        <li><a href="pricing.html" data-i18n="nav.pricing">الباقات</a></li>
+        <li><a href="work.html" data-i18n="nav.work">طريقة العمل</a></li>
+        <li><a href="faq.html" data-i18n="nav.faq">الأسئلة</a></li>
+        <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">تواصل</a></li>
       </ul>
-      <a class="nav-cta" href="contact.html">احجز استشارة</a>
+      <div class="nav-actions">
+        <a id="langToggle" class="lang-toggle" href="?lang=en" role="button" aria-label="Switch language">EN</a>
+        <a class="nav-cta" href="contact.html" data-i18n="nav.cta">احجز استشارة</a>
+      </div>
     </nav>
   </header>
   <div id="menuOverlay" class="menu-overlay" aria-hidden="true"></div>
 
-  <main>
-    <section class="hero hero-modern container">
-      <div class="hero-text reveal">
+  <main class="home-canvas">
+    <section class="hero hero-modern home-hero-scene container">
+      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+      <div class="hero-float hero-float-ai">AI</div>
+      <div class="hero-float hero-float-data">DATA</div>
+      <div class="hero-float hero-float-api">API</div>
+
+      <div class="hero-scene-copy reveal">
         <p class="badge">حلول تقنية متكاملة في ليبيا</p>
         <h1>نبني لك منتج رقمي قوي بدل موقع شكلي</h1>
         <p class="hero-copy">في TCG نركز على النتائج: سرعة أعلى، تحويلات أفضل، وتجربة استخدام تدعم نمو أعمالك فعلياً.</p>
@@ -104,53 +114,166 @@
           <a class="btn btn-primary" href="contact.html">ابدأ مشروعك</a>
           <a class="btn btn-secondary" href="services.html">تصفح الخدمات</a>
         </div>
-        <div class="hero-meta">
-          <p class="hero-trust">120+ مشروع ناجح • 98% التزام بالمواعيد • دعم فني مستمر</p>
-          <p class="hero-locations">نخدم: طرابلس، بنغازي، مصراتة، وكل ليبيا</p>
+        <div class="hero-scene-meta">
+          <p class="hero-trust"><span>⎯</span> 120+ مشروع ناجح • 98% التزام بالمواعيد • دعم فني مستمر</p>
+          <p class="hero-locations"><span>⌖</span> نخدم: طرابلس، بنغازي، مصراتة، وكل ليبيا</p>
         </div>
       </div>
 
-      <div class="section-hub reveal">
+      <div class="home-service-deck reveal">
         <h2 class="section-title">اختر القسم اللي تحتاجه</h2>
-        <div class="hub-list">
-          <a class="hub-item" href="services.html">
-            <span class="hub-icon">⌘</span>
-            <strong>تكامل البرمجيات</strong>
-            <span>تكامل الخدمات، من بناء الاستراتيجية في البرمجيات وحتى النشر</span>
-            <span class="hub-link">تصفح</span>
+        <div class="home-service-grid">
+          <a class="home-service-card" href="services.html">
+            <span class="home-service-icon">⌘</span>
+            <strong>الخدمات</strong>
+            <p>كل خدمات TCG الرقمية في صفحة واحدة: ويب، موبايل، أتمتة، وتكاملات.</p>
+            <span class="home-service-link">تصفح</span>
           </a>
-          <a class="hub-item" href="portfolio.html">
-            <span class="hub-icon">📊</span>
-            <strong>تحليل البيانات</strong>
-            <span>تحليل البيانات الرقمية من أجل تحسين الأداء بشكل مستمر</span>
-            <span class="hub-link">تصفح</span>
+          <a class="home-service-card" href="portfolio.html">
+            <span class="home-service-icon">◈</span>
+            <strong>الأعمال</strong>
+            <p>نماذج تنفيذ ومشاريع توضح جودة التجربة والنتائج التي يمكن الوصول إليها.</p>
+            <span class="home-service-link">تصفح</span>
           </a>
-          <a class="hub-item" href="mobile-apps.html">
-            <span class="hub-icon">📱</span>
-            <strong>تطبيقات الهاتف</strong>
-            <span>تطبيقات موبايل متوافقة على iOS و Android</span>
-            <span class="hub-link">تصفح</span>
+          <a class="home-service-card" href="pricing.html">
+            <span class="home-service-icon">◌</span>
+            <strong>الباقات</strong>
+            <p>خطط مرنة مناسبة للمشاريع الصغيرة والمتوسطة والتنفيذات المخصصة.</p>
+            <span class="home-service-link">تصفح</span>
           </a>
-          <a class="hub-item" href="web-development.html">
-            <span class="hub-icon">⌬</span>
-            <strong>تطوير الويب</strong>
-            <span>تفاصيل تطوير الويب من علي المنصات بشكل مستقل</span>
-            <span class="hub-link">تصفح</span>
+          <a class="home-service-card" href="work.html">
+            <span class="home-service-icon">⇢</span>
+            <strong>طريقة العمل</strong>
+            <p>تعرف على مراحل تنفيذ المشروع من التحليل إلى الإطلاق والمتابعة.</p>
+            <span class="home-service-link">تصفح</span>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-insight-section container reveal">
+      <div class="home-insight-shell">
+        <div class="home-insight-copy">
+          <p class="badge">لماذا TCG</p>
+          <h2>نحوّل الفكرة إلى تجربة رقمية قابلة للنمو</h2>
+          <p>نحن لا نبني واجهة فقط، بل نصمم رحلة كاملة تجمع بين الهوية، الأداء، سهولة الاستخدام، وقابلية التوسع مع نمو مشروعك.</p>
+        </div>
+        <div class="home-insight-grid">
+          <article class="home-insight-card">
+            <span class="home-insight-number">01</span>
+            <strong>تصميم أوضح</strong>
+            <p>واجهات مرتبة بصريًا تسهل الفهم وتوجه المستخدم مباشرة إلى الإجراء المناسب.</p>
+          </article>
+          <article class="home-insight-card">
+            <span class="home-insight-number">02</span>
+            <strong>تنفيذ أسرع</strong>
+            <p>بنية منظمة تقلل التعقيد أثناء التطوير وتسمح بإطلاق المنتج بشكل أسرع.</p>
+          </article>
+          <article class="home-insight-card">
+            <span class="home-insight-number">03</span>
+            <strong>نمو مستقبلي</strong>
+            <p>نبني الموقع أو التطبيق بطريقة تسمح بإضافة خدمات وتكاملات لاحقًا دون إعادة البداية.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-metrics-section container reveal">
+      <div class="home-metrics-grid">
+        <article class="home-metric-card">
+          <strong>120+</strong>
+          <span>مشروعًا منفذًا</span>
+        </article>
+        <article class="home-metric-card">
+          <strong>98%</strong>
+          <span>التزام بالمواعيد</span>
+        </article>
+        <article class="home-metric-card">
+          <strong>24/7</strong>
+          <span>جاهزية للتوسع والدعم</span>
+        </article>
+        <article class="home-metric-card">
+          <strong>API</strong>
+          <span>تكاملات مرنة مع الأنظمة</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-process-section container reveal">
+      <div class="home-process-copy">
+        <p class="badge">طريقة العمل</p>
+        <h2>مسار واضح من الفكرة حتى الإطلاق</h2>
+        <p>نقسم التنفيذ إلى مراحل قصيرة ومفهومة حتى تكون الرؤية واضحة في كل خطوة.</p>
+      </div>
+      <div class="home-process-grid">
+        <article class="home-process-card">
+          <span class="home-process-step">01</span>
+          <strong>فهم الاحتياج</strong>
+          <p>جمع التفاصيل وتحديد الهدف التجاري والفني بدقة.</p>
+        </article>
+        <article class="home-process-card">
+          <span class="home-process-step">02</span>
+          <strong>تصميم التجربة</strong>
+          <p>ترتيب المحتوى والواجهات ومسار الاستخدام قبل التنفيذ.</p>
+        </article>
+        <article class="home-process-card">
+          <span class="home-process-step">03</span>
+          <strong>التطوير والربط</strong>
+          <p>تنفيذ الواجهة والمنطق والتكاملات داخل بنية مستقرة.</p>
+        </article>
+        <article class="home-process-card">
+          <span class="home-process-step">04</span>
+          <strong>الإطلاق والتحسين</strong>
+          <p>نشر المنتج ومتابعة الأداء وتحسين النتائج بعد الانطلاق.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-cta-section container reveal">
+      <div class="home-cta-shell">
+        <div>
+          <p class="badge">جاهز للبدء؟</p>
+          <h2>إذا لديك فكرة أو مشروع قائم، نرتبه لك إلى خطة تنفيذ واضحة.</h2>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">احجز استشارة</a>
+          <a class="btn btn-secondary" href="portfolio.html">شاهد الأعمال</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 The Code Gate - TCG. All rights reserved.</p>
+    <div class="container footer-shell">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <img src="assets/logotcg.jpeg" alt="TCG Logo" class="logo-img" width="40" height="40" decoding="async">
+          <span class="logo-text-wrap">
+            <span class="logo-title">The Code Gate</span>
+            <span class="logo-subtitle">Digital Product Studio</span>
+          </span>
+        </a>
+        <p>نطوّر تجارب رقمية حديثة في ليبيا تجمع بين التصميم، الأداء، والنتيجة التجارية.</p>
+      </div>
+      <div class="footer-links">
+        <a href="services.html">الخدمات</a>
+        <a href="portfolio.html">الأعمال</a>
+        <a href="pricing.html">الباقات</a>
+        <a href="contact.html">تواصل</a>
+      </div>
+      <div class="footer-links">
+        <a href="work.html">طريقة العمل</a>
+        <a href="faq.html">الأسئلة</a>
+        <a href="about.html">من نحن</a>
+        <a href="https://wa.me/218946510065" target="_blank" rel="noopener noreferrer">واتساب مباشر</a>
+      </div>
+      <p class="footer-meta">© 2026 The Code Gate - TCG. All rights reserved.</p>
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/218916510065" target="_blank" rel="noopener noreferrer" aria-label="تواصل واتساب">واتساب</a>
+  <a class="floating-wa" href="https://wa.me/218946510065" target="_blank" rel="noopener noreferrer" aria-label="تواصل واتساب">واتساب</a>
   <button id="scrollTopBtn" class="scroll-top" type="button" aria-label="العودة للأعلى">↑</button>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=20260311-2" defer></script>
 </body>
 </html>
